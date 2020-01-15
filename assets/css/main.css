@@ -93,6 +93,11 @@ p {margin: 5vw;}
         min-height: 90vh;
 }
 
+#photo {
+        width: 25vw;
+        height: 60vh;
+}
+
 #presentation {
         width: 70vw;
 }
