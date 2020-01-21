@@ -18,14 +18,14 @@
     
         <body>
 
-                <header class="container row wrap ai-center jc-around fix h8 w100 bg-black">
+                <header class="container row wrap ai-center jc-around fixed h8 w100 bg-black">
                         <div class="brand">
                                 <a href="#accueil">CV Alexandre Pereira</a>
                         </div>
 
-                        <div class="toggle-wrapper">
-                                <div class= "toggle-button" id = "toggle-button">
-                                        <input type="button" value="Menu" class="menu-button" onclick="Toggle();">
+                        <nav class="toggle-wrapper">
+                                <div class= "toggle-button">
+                                        <input type="button" value="Menu" id="open-button" onclick="ToggleMenu();">
                                 </div>
                                 <div class="toggle-menu" id = "toggle-menu">
                                         <ul>
@@ -36,22 +36,27 @@
                                                 <a href="#contacts"><li>Contact</li></a>
                                         </ul>        
                                 </div>
-                        </div>
+                        </nav>
                 </header>
 
                 <main>
-                        <section id = "accueil" class="container column wrap ai-center jc-center h100 w100">
-                                <h1 class="w100"> CV PEREIRA Alexandre</h1>
+                        <section id = "accueil" class="container column wrap ai-center jc-center min-h100 w100">
+
+                                <h1 class="w100 txt-center"> CV PEREIRA Alexandre</h1>
+                                
                                 <div class="button">
+
                                         <a href="#profil"><img src="assets\img\various\arrow.png"></a>
+                                
                                 </div>
+                        
                         </section>
 
-                        <section id = "profil" class="container row wrap ai-center jc-around w100 h100 bg-gray">
+                        <section id = "profil" class="container row wrap ai-center jc-around w100 min-h100 bg-gray">
 
-                                <h2 class="w100">Présentation</h2>
+                                <h2 class="w100 txt-center">Présentation</h2>
 
-                                <img id="photo" class="w25" src="assets\img\various\photo-profil.jpg" alt="">
+                                <img class="w25" src="assets\img\various\photo-profil.jpg" alt="">
                                 
                                 <div class="w70">
                                         
@@ -79,15 +84,15 @@
                 
                         </section>
 
-                        <section id="compétences" class="container row wrap ai-center jc-around w100 bg-lightblue">
+                        <section id="compétences" class="container row wrap ai-center jc-around w100 min-h100 bg-lightblue">
 
-                                <h2 class="w100"> Mes Compétences</h2>
+                                <h2 class="w100 txt-center"> Mes Compétences</h2>
                                 
-                                <section id="comp1" class="container row wrap ai-center jc-around w33 mtop">
+                                <section id="comp1" class="container row wrap ai-center jc-around w33 m-top">
 
-                                        <img class="fit-logo h20 w25" src="assets\img\logos\logo-HTML.png" alt="">
+                                        <img class="fit-logo h20 w10" src="assets\img\logos\logo-HTML.png" alt="">
                                         
-                                        <p class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Asperiores delectus doloremque repellendus corrupti,
                                                 mollitia rem ipsam itaque atque id totam eos illo debitis.
                                                 Eligendi sunt non ea at voluptatem excepturi.
@@ -97,11 +102,11 @@
 
                                 </section>
 
-                                <section id="comp2" class="container row wrap ai-center jc-around w33 mtop">
+                                <section id="comp2" class="container row wrap ai-center jc-around w33 m-top">
 
-                                        <img class="fit-logo h20 w25" src="assets\img\logos\logo-CSS.png" alt="">
+                                        <img class="fit-logo h20 w10" src="assets\img\logos\logo-CSS.png" alt="">
                                         
-                                        <p class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Asperiores delectus doloremque repellendus corrupti,
                                                 mollitia rem ipsam itaque atque id totam eos illo debitis.
                                                 Eligendi sunt non ea at voluptatem excepturi.
@@ -111,11 +116,11 @@
 
                                 </section> 
                                 
-                                <section id="comp3" class="container row wrap ai-center jc-around w33 mtop">
+                                <section id="comp3" class="container row wrap ai-center jc-around w33 m-top">
 
-                                        <img class="fit-logo h20 w25" src="assets\img\logos\logo-JS.png" alt="">
+                                        <img class="fit-logo h20 w10" src="assets\img\logos\logo-JS.png" alt="">
                                         
-                                        <p class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Asperiores delectus doloremque repellendus corrupti,
                                                 mollitia rem ipsam itaque atque id totam eos illo debitis.
                                                 Eligendi sunt non ea at voluptatem excepturi.
@@ -125,11 +130,11 @@
 
                                 </section>
 
-                                <section id="comp4" class="container row wrap ai-center jc-around w50 mtop">
+                                <section id="comp4" class="container row wrap ai-center jc-around w50 m-top">
 
-                                        <img class="fit-picture h20 w25" src="assets\img\logos\logo-Opquast.png" alt="">
+                                        <img class="fit-picture h20 w10" src="assets\img\logos\logo-Opquast.png" alt="">
                                         
-                                        <p class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Asperiores delectus doloremque repellendus corrupti,
                                                 mollitia rem ipsam itaque atque id totam eos illo debitis.
                                                 Eligendi sunt non ea at voluptatem excepturi.
@@ -139,11 +144,11 @@
 
                                 </section>
 
-                                <section id="comp5" class="container row wrap ai-center jc-around w50 mtop">
+                                <section id="comp5" class="container row wrap ai-center jc-around w50 m-top">
 
-                                        <img class="fit-picture h20 w25" src="assets\img\logos\logo-agile.png" alt="">
+                                        <img class="fit-picture h20 w10" src="assets\img\logos\logo-agile.png" alt="">
                                         
-                                        <p class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Asperiores delectus doloremque repellendus corrupti,
                                                 mollitia rem ipsam itaque atque id totam eos illo debitis.
                                                 Eligendi sunt non ea at voluptatem excepturi.
@@ -155,9 +160,9 @@
                                 
                         </section>
 
-                        <section id = "formations" class="container column wrap ai-center jc-around w100 h100 bg-lightgray">
+                        <section id = "formations" class="container column wrap ai-center jc-around w100 min-h100 bg-lightgray">
 
-                                <h2 class="w100">Mes Formations</h2>
+                                <h2 class="w100 txt-center">Mes Formations</h2>
 
                                 <p class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         Aliquam nulla quibusdam ex libero quae nesciunt,
@@ -185,63 +190,75 @@
                                 
                         </section>
 
-                        <section id = "portfolio" class="container row wrap ai-center jc-around w100 bg-blue">
+                        <section id = "portfolio" class="container row wrap ai-center jc-around min-h100 w100 bg-blue">
 
-                                <h2 class="w100">Mes Réalisations</h2>
+                                <h2 class="w100 txt-center">Mes Réalisations</h2>
                                 
                                 <div class="container wrap w50 jc-center">
-                                        <img class="mtop" src="assets\img\various\exemple.jpg">
-                                        <p class="margin w100">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                                        <img class="m-top w25 h40" src="assets\img\various\jeu de devinettes.PNG">
+                                        
+                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Amet consectetur commodi perspiciatis rem repellendus vel architecto reiciendis 
                                                 nam modi aspernatur, aliquam eum possimus officiis sed blanditiis 
                                                 veniam quisquam iste nobis.
                                         </p>
+
                                 </div>
 
                                 <div class="container wrap w50 jc-center">
-                                        <img class="mtop" src="assets\img\various\exemple.jpg">
-                                        <p class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                                        <img class="m-top w25 h40" src="assets\img\various\jeu de devinettes.PNG">
+                                        
+                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Amet consectetur commodi perspiciatis rem repellendus vel architecto reiciendis 
                                                 nam modi aspernatur, aliquam eum possimus officiis sed blanditiis 
                                                 veniam quisquam iste nobis.
                                         </p>
+                                
                                 </div>
                         
                                 <div class="container wrap w50 jc-center">
-                                        <img class="mtop" src="assets\img\various\exemple.jpg">
-                                        <p class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                                        <img class="m-top w25 h40" src="assets\img\various\jeu de devinettes.PNG">
+                                        
+                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Amet consectetur commodi perspiciatis rem repellendus vel architecto reiciendis 
                                                 nam modi aspernatur, aliquam eum possimus officiis sed blanditiis 
                                                 veniam quisquam iste nobis.
                                         </p>
+                                
                                 </div>
 
                                 <div class="container wrap w50 jc-center">
-                                        <img class="mtop" src="assets\img\various\exemple.jpg">
-                                        <p class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                                        <img class="m-top w25 h40" src="assets\img\various\jeu de devinettes.PNG">
+                                        
+                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Amet consectetur commodi perspiciatis rem repellendus vel architecto reiciendis 
                                                 nam modi aspernatur, aliquam eum possimus officiis sed blanditiis 
                                                 veniam quisquam iste nobis.
                                         </p>
+                                
                                 </div>
 
                         </section>
 
-                        <section id = "contacts" class="container row wrap ai-center jc-around w100 h90 bg-gray">
+                        <section id = "contacts" class="container row wrap ai-center jc-around w100 min-h90 bg-gray">
 
-                                <h2 class="w100">Me Contacter</h2>      
+                                <h2 class="w100 txt-center">Me Contacter</h2>      
 
                                 <form method="POST" name="form" class="container row wrap w100 jc-center">
 
                                         <div class="container column ai-center w50">
 
-                                                <input type="text" name="name" class=" h8 w25" placeholder="Votre nom" size="20"><br><br>
+                                                <input type="text" name="name" class=" h8 w25 m-bottom" placeholder="Votre nom" size="20">
 
-                                                <input type="text" name="firstname" class="h8 w25" placeholder="Votre prénom" size="20"><br><br>
+                                                <input type="text" name="firstname" class="h8 w25 m-bottom" placeholder="Votre prénom" size="20">
 
-                                                <input type="text" name="company" class="h8 w25" placeholder="Votre entreprise" size="20"><br><br>
+                                                <input type="text" name="company" class="h8 w25 m-bottom" placeholder="Votre entreprise" size="20">
 
-                                                <input type="text" name="phone" class="h8 w25" placeholder="Votre numéro de téléphone" size="20"><br><br>
+                                                <input type="text" name="phone" class="h8 w25 m-bottom" placeholder="Votre numéro de téléphone" size="20">
 
                                         </div>
 
@@ -253,7 +270,7 @@
 
                                         <div class="submit">
 
-                                                <input type="button" value="Submit" class="h8 w8 bg-purple" onclick="Register();">
+                                                <input type="button" value="Submit" class="h8 w8 bg-purple" onclick="Submit();">
                                                         
                                         </div>
 
@@ -264,7 +281,7 @@
 
         </body>
 
-        <footer class="h8 w100">
+        <footer class="h8 w100 txt-center">
                 <p>Copyright Alexandre Pereira-Tous droits réservés</p>
         </footer>
 
