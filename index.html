@@ -9,6 +9,8 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
                 <link href="assets\css\main.css" rel="stylesheet">
+
+                <link href="assets\css\animation.css" rel="stylesheet">
     
                 <script src="assets\js\index.js" type="text/javascript"></script>
 
@@ -19,19 +21,21 @@
         <body>
 
                 <header class="container row wrap ai-center jc-around fixed h8 w100 bg-black">
+
                         <div class="brand">
-                                <a href="#accueil">CV Alexandre Pereira</a>
+                                <a href="#accueil"><p>Alexandre Pereira</p></a>
                         </div>
 
                         <nav class="toggle-wrapper">
+
                                 <div class= "toggle-button">
                                         <input type="button" value="Menu" id="open-button" onclick="ToggleMenu();">
                                 </div>
+                                
                                 <div class="toggle-menu" id = "toggle-menu">
                                         <ul>
                                                 <a href="#profil"><li>Profil</li></a>
                                                 <a href="#compétences"><li>Compétences</li></a>
-                                                <a href="#formations"><li>Formations</li></a>
                                                 <a href="#portfolio"><li>Portfolio</li></a>
                                                 <a href="#contacts"><li>Contact</li></a>
                                         </ul>        
@@ -42,23 +46,23 @@
                 <main>
                         <section id = "accueil" class="container column wrap ai-center jc-center min-h100 w100">
 
-                                <h1 class="w100 txt-center"> CV PEREIRA Alexandre</h1>
+                                <h1 class="w100 txt-center text-focus-in">ALEXANDRE PEREIRA</h1>
                                 
                                 <div class="button">
 
-                                        <a href="#profil"><img src="assets\img\various\arrow.png"></a>
+                                        <a href="#profil"><img src="assets\img\various\down-arrow.png" class="w8 h8"></a>
                                 
                                 </div>
                         
                         </section>
 
-                        <section id = "profil" class="container row wrap ai-center jc-around w100 min-h100 bg-gray">
+                        <section id = "profil" class="container row wrap ai-center jc-around min-h90 w100 bg-gray">
 
                                 <h2 class="w100 txt-center">Présentation</h2>
 
-                                <img class="w25" src="assets\img\various\photo-profil.jpg" alt="">
+                                <img class="h70 w25 slide-in-left m-bottom" src="assets\img\various\photo-profil.jpg" alt="">
                                 
-                                <div class="w70">
+                                <div class="w70 slide-in-right">
                                         
                                         <p class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Voluptates, at sequi! Perspiciatis quasi, enim,
@@ -84,177 +88,135 @@
                 
                         </section>
 
-                        <section id="compétences" class="container row wrap ai-center jc-around w100 min-h100 bg-lightblue">
+                        <section id="compétences" class="container row wrap ai-center jc-around min-h100 w100 bg-lightblue">
 
                                 <h2 class="w100 txt-center"> Mes Compétences</h2>
                                 
-                                <section id="comp1" class="container row wrap ai-center jc-around w33 m-top">
+                                <section class="container row wrap ai-center jc-around w33 m-top">
 
                                         <img class="fit-logo h20 w10" src="assets\img\logos\logo-HTML.png" alt="">
                                         
-                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Asperiores delectus doloremque repellendus corrupti,
+                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur 
+                                                adipisicing elit. Asperiores delectus doloremque repellendus corrupti,
                                                 mollitia rem ipsam itaque atque id totam eos illo debitis.
                                                 Eligendi sunt non ea at voluptatem excepturi.
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                In necessitatibus totam officia nam veritatis maxime ullam debitis!
                                         </p>
 
                                 </section>
 
-                                <section id="comp2" class="container row wrap ai-center jc-around w33 m-top">
+                                <section class="container row wrap ai-center jc-around w33 m-top">
 
                                         <img class="fit-logo h20 w10" src="assets\img\logos\logo-CSS.png" alt="">
                                         
-                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Asperiores delectus doloremque repellendus corrupti,
+                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur 
+                                                adipisicing elit. Asperiores delectus doloremque repellendus corrupti,
                                                 mollitia rem ipsam itaque atque id totam eos illo debitis.
                                                 Eligendi sunt non ea at voluptatem excepturi.
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                In necessitatibus totam officia nam veritatis maxime ullam debitis!
                                         </p>
 
                                 </section> 
                                 
-                                <section id="comp3" class="container row wrap ai-center jc-around w33 m-top">
+                                <section class="container row wrap ai-center jc-around w33 m-top">
 
                                         <img class="fit-logo h20 w10" src="assets\img\logos\logo-JS.png" alt="">
                                         
-                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Asperiores delectus doloremque repellendus corrupti,
+                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur 
+                                                adipisicing elit. Asperiores delectus doloremque repellendus corrupti,
                                                 mollitia rem ipsam itaque atque id totam eos illo debitis.
                                                 Eligendi sunt non ea at voluptatem excepturi.
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                In necessitatibus totam officia nam veritatis maxime ullam debitis!
                                         </p>
 
                                 </section>
 
-                                <section id="comp4" class="container row wrap ai-center jc-around w50 m-top">
+                                <section class="container row wrap ai-center jc-around w50 m-top">
 
                                         <img class="fit-picture h20 w10" src="assets\img\logos\logo-Opquast.png" alt="">
                                         
-                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Asperiores delectus doloremque repellendus corrupti,
+                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur 
+                                                adipisicing elit. Asperiores delectus doloremque repellendus corrupti,
                                                 mollitia rem ipsam itaque atque id totam eos illo debitis.
                                                 Eligendi sunt non ea at voluptatem excepturi.
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                In necessitatibus totam officia nam veritatis maxime ullam debitis!
                                         </p>
 
                                 </section>
 
-                                <section id="comp5" class="container row wrap ai-center jc-around w50 m-top">
+                                <section class="container row wrap ai-center jc-around w50 m-top">
 
                                         <img class="fit-picture h20 w10" src="assets\img\logos\logo-agile.png" alt="">
                                         
-                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Asperiores delectus doloremque repellendus corrupti,
+                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur 
+                                                adipisicing elit. Asperiores delectus doloremque repellendus corrupti,
                                                 mollitia rem ipsam itaque atque id totam eos illo debitis.
                                                 Eligendi sunt non ea at voluptatem excepturi.
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                In necessitatibus totam officia nam veritatis maxime ullam debitis!
                                         </p>
 
                                 </section>
                                 
                         </section>
 
-                        <section id = "formations" class="container column wrap ai-center jc-around w100 min-h100 bg-lightgray">
-
-                                <h2 class="w100 txt-center">Mes Formations</h2>
-
-                                <p class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Aliquam nulla quibusdam ex libero quae nesciunt,
-                                        dolor odit unde reiciendis aspernatur modi illo,
-                                        ut ducimus possimus blanditiis facere accusamus veritatis accusantium!
-                                </p>
-                                
-                                <p class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Aliquam nulla quibusdam ex libero quae nesciunt,
-                                        dolor odit unde reiciendis aspernatur modi illo,
-                                        ut ducimus possimus blanditiis facere accusamus veritatis accusantium!
-                                </p>
-
-                                <p class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Aliquam nulla quibusdam ex libero quae nesciunt,
-                                        dolor odit unde reiciendis aspernatur modi illo,
-                                        ut ducimus possimus blanditiis facere accusamus veritatis accusantium!
-                                </p>
-
-                                <p class="margin">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Aliquam nulla quibusdam ex libero quae nesciunt,
-                                        dolor odit unde reiciendis aspernatur modi illo,
-                                        ut ducimus possimus blanditiis facere accusamus veritatis accusantium!
-                                </p>
-                                
-                        </section>
-
-                        <section id = "portfolio" class="container row wrap ai-center jc-around min-h100 w100 bg-blue">
+                        <section id = "portfolio" class="container row wrap ai-center jc-around min-h100 w100 bg-darkgray">
 
                                 <h2 class="w100 txt-center">Mes Réalisations</h2>
                                 
                                 <div class="container wrap w50 jc-center">
 
-                                        <img class="m-top w25 h40" src="assets\img\various\jeu de devinettes.PNG">
+                                        <img class="m-top w25 h40" src="assets\img\projects\jeu-de-devinettes.PNG">
                                         
-                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Amet consectetur commodi perspiciatis rem repellendus vel architecto reiciendis 
-                                                nam modi aspernatur, aliquam eum possimus officiis sed blanditiis 
-                                                veniam quisquam iste nobis.
+                                        <p class="margin txt-center c-white">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                                elit.Amet consectetur commodi perspiciatis rem repellendus vel architecto
+                                                reiciendis nam modi aspernatur, aliquam eum possimus officiis sed 
+                                                blanditiis veniam quisquam iste nobis.
                                         </p>
 
                                 </div>
 
                                 <div class="container wrap w50 jc-center">
 
-                                        <img class="m-top w25 h40" src="assets\img\various\jeu de devinettes.PNG">
+                                        <img class="m-top w25 h40" src="assets\img\projects\responsive-design.PNG">
                                         
-                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Amet consectetur commodi perspiciatis rem repellendus vel architecto reiciendis 
-                                                nam modi aspernatur, aliquam eum possimus officiis sed blanditiis 
-                                                veniam quisquam iste nobis.
+                                        <p class="margin txt-center c-white">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                                elit.Amet consectetur commodi perspiciatis rem repellendus vel architecto
+                                                reiciendis nam modi aspernatur, aliquam eum possimus officiis sed 
+                                                blanditiis veniam quisquam iste nobis.
                                         </p>
                                 
                                 </div>
                         
                                 <div class="container wrap w50 jc-center">
 
-                                        <img class="m-top w25 h40" src="assets\img\various\jeu de devinettes.PNG">
+                                        <img class="m-top w25 h40" src="assets\img\projects\switch-on-off.PNG">
                                         
-                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Amet consectetur commodi perspiciatis rem repellendus vel architecto reiciendis 
-                                                nam modi aspernatur, aliquam eum possimus officiis sed blanditiis 
-                                                veniam quisquam iste nobis.
+                                        <p class="margin txt-center c-white">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                                elit.Amet consectetur commodi perspiciatis rem repellendus vel architecto
+                                                reiciendis nam modi aspernatur, aliquam eum possimus officiis sed 
+                                                blanditiis veniam quisquam iste nobis.
                                         </p>
                                 
                                 </div>
 
                                 <div class="container wrap w50 jc-center">
 
-                                        <img class="m-top w25 h40" src="assets\img\various\jeu de devinettes.PNG">
+                                        <img class="m-top w25 h40" src="assets\img\projects\jeu-de-devinettes.PNG">
                                         
-                                        <p class="margin txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Amet consectetur commodi perspiciatis rem repellendus vel architecto reiciendis 
-                                                nam modi aspernatur, aliquam eum possimus officiis sed blanditiis 
-                                                veniam quisquam iste nobis.
+                                        <p class="margin txt-center c-white">Lorem ipsum dolor sit amet consectetur adipisicing 
+                                                elit.Amet consectetur commodi perspiciatis rem repellendus vel architecto
+                                                reiciendis nam modi aspernatur, aliquam eum possimus officiis sed 
+                                                blanditiis veniam quisquam iste nobis.
                                         </p>
                                 
                                 </div>
 
                         </section>
 
-                        <section id = "contacts" class="container row wrap ai-center jc-around w100 min-h90 bg-gray">
+                        <section id = "contacts" class="container row wrap ai-center jc-around w100 min-h90 bg-blue">
 
                                 <h2 class="w100 txt-center">Me Contacter</h2>      
 
                                 <form method="POST" name="form" class="container row wrap w100 jc-center">
 
-                                        <div class="container column ai-center w50">
+                                        <div class="container column ai-center w50 m-bottom">
 
                                                 <input type="text" name="name" class=" h8 w25 m-bottom" placeholder="Votre nom" size="20">
-
-                                                <input type="text" name="firstname" class="h8 w25 m-bottom" placeholder="Votre prénom" size="20">
 
                                                 <input type="text" name="company" class="h8 w25 m-bottom" placeholder="Votre entreprise" size="20">
 
@@ -270,7 +232,7 @@
 
                                         <div class="submit">
 
-                                                <input type="button" value="Submit" class="h8 w8 bg-purple" onclick="Submit();">
+                                                <input type="submit" value="Submit" class="h8 w8 bg-darkblue" onclick="Submit();">
                                                         
                                         </div>
 
