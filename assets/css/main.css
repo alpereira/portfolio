@@ -33,12 +33,14 @@ li {display: inline; padding-right: 2vw;}
 .w40 {width: 40vw;}
 .w33 {width: 33.3333%;}
 .w25 {width: 25vw;}
+.w20 {width: 20vw;}
 .w10 {width: 10vw;}
 .w8 {width: 8vw;}
 
 .min-h100 {min-height: 100vh;}
 .min-h90 {min-height: 90vh;}
 .min-h60 {min-height: 60vh;}
+.h50 {height: 50vh;}
 .h40 {height: 40vh;}
 .h20 {height: 20vh;}
 .h8 {height: 8vh;}
@@ -78,7 +80,7 @@ li {display: inline; padding-right: 2vw;}
         }
         
         .w33, .w50, .w70 {width: 100vw;}
-        .w25, .w40 {width: 80vw;}
+        .w20, .w25, .w40 {width: 80vw;}
         .w10 {width: 50vw;}
         .w8 {width: 20vw;}
 
