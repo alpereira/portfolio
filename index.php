@@ -146,71 +146,37 @@
 
                                 <h2 class="w100 txt-center c-white pa-top40">Mes Réalisations</h2>
                                 
-                                <div class="h50 w50 container wrap jc-center">
-
-                                        <img class="w25 h40" src="assets\img\projects\jeu-de-devinettes.PNG">
-                                        
-                                        <p class="padding txt-center c-white">Jeu où il faut trouver un numéro 
-                                                entre 1 et 10
-                                        </p>
-
-                                </div>
-
-                                <div class="h50 w50 container wrap jc-center">
-
-                                        <img class="w25 h40" src="assets\img\projects\responsive-design.PNG">
-                                        
-                                        <p class="padding txt-center c-white">Exemple de responsive design</p>
-                                
-                                </div>
-                        
-                                <div class="h50 w50 container wrap jc-center">
-
-                                        <img class="w25 h40" src="assets\img\projects\switch-on-off.PNG">
-                                        
-                                        <p class="padding txt-center c-white">En cliquant sur l'intérupteur 
-                                                l'ampoule s'éteint ou s'allume
-                                        </p>
-                                
-                                </div>
-
-                                <div class="h50 w50 container wrap jc-center">
-
-                                        <img class="w25 h40" src="assets\img\projects\jeu-de-devinettes.PNG">
-                                        
-                                        <p class="padding txt-center c-white">Lorem ipsum dolor sit amet consectetur 
-                                                adipisicing elit.
-                                        </p>
-                                
-                                </div>
+                                <?php require ('assets\php\show_projects.php') ?>
 
                         </section>
 
                         <section id = "contacts" class="min-h90 w100 container row wrap ai-center jc-around bg-blue">
 
-                                <h2 class="w100 txt-center c-white">Me Contacter</h2>     
+                                <h2 class="w100 txt-center c-white">Me Contacter</h2>  
 
-                                <form action="send_contact.php" method="POST" name="form" class="container row wrap w100 jc-center" enctype="multipart/form-data">
+                                <?php require ('assets\php\send_contact.php') ?>   
 
-                                        <div class="h50 w50 container column ai-center ma-bottom">
+                                <form method="POST" name="form" class="container row wrap w100 jc-center" enctype="multipart/form-data">
 
-                                                <input type="text" name="name" class="h8 w25 ma-bottom c-white bg-black" placeholder="Votre nom">
+                                        <div class="h50 w50 container column ai-center">
 
-                                                <input type="text" name="company" class="h8 w25 ma-bottom c-white bg-black" placeholder="Votre entreprise">
+                                                <input type="text" name="name" class="h8 w25 ma-bottom border0 c-white bg-black" placeholder="Votre nom">
 
-                                                <input type="text" name="phone" class="h8 w25 ma-bottom c-white bg-black" placeholder="Votre numéro de téléphone">
+                                                <input type="text" name="company" class="h8 w25 ma-bottom border0 c-white bg-black" placeholder="Votre entreprise">
+
+                                                <input type="text" name="phone" class="h8 w25 ma-bottom border0 c-white bg-black" placeholder="Votre numéro de téléphone">
 
                                         </div>
 
                                         <div class="container column ai-center w50">
 
-                                                <textarea name="message" placeholder="Message" class="h40 w40 c-white bg-black"></textarea>
+                                                <textarea name="message" placeholder="Message" class="h40 w40 border0 c-white bg-black"></textarea>
 
                                         </div>
 
                                         <div class="submit">
 
-                                                <input type="submit" value="Submit" class="h8 w8 bg-darkblue pointer" onclick="Submit();">
+                                                <input type="submit" value="Submit" class="h8 w8 border0 bg-darkblue pointer" onclick="Submit();">
                                                         
                                         </div>
 
@@ -219,10 +185,10 @@
                         </section>
                 </main>
 
-        </body>
+                <footer class="h8 w100 txt-center">
+                        <p>Copyright Alexandre Pereira-Tous droits réservés</p>
+                </footer>
 
-        <footer class="h8 w100 txt-center">
-                <p>Copyright Alexandre Pereira-Tous droits réservés</p>
-        </footer>
+        </body>
 
 </html>
